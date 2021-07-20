@@ -150,7 +150,7 @@
 			},
 
 			canGoToNext: function () {
-				return (this.settings.infinite || this.currentSlide < this.countSlides - 1)
+				return (this.settings.infinite || this.currentSlide < this.countSlides - this.settings.slidesToShow)
 			},
 
 			countSlides: function () {
