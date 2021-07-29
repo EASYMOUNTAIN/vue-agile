@@ -154,7 +154,7 @@
 			},
 
 			countSlides: function () {
-				return (this.isSSR) ? this.htmlCollectionToArray(this.$slots.default).filter(node => node.tag).length : this.slides.length
+				return this.htmlCollectionToArray(this.$slots.default).filter(node => node.tag).length
 			},
 
 			countSlidesAll: function () {
