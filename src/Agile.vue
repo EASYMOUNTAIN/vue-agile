@@ -283,7 +283,7 @@
 				let translateX = (!this.settings.fade) ? n * this.widthSlide * this.settings.slidesToScroll : 0
 				this.transitionDelay = (transition) ? this.speed : 0
 
-				if (this.infinite || (this.currentSlide + this.slidesToShow <= this.countSlides)) {
+				if (this.infinite || (this.currentSlide + Math.floor(this.slidesToShow) <= this.countSlides)) {
 					this.translateX = (this.settings.rtl) ? translateX : -1 * translateX
 				}
 			},
